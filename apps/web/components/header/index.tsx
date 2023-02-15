@@ -1,5 +1,15 @@
 import React from "react";
-import { Flex, Space, Size, Card, View, Button } from "ui";
+import {
+  Flex,
+  Space,
+  Size,
+  Card,
+  View,
+  Button,
+  MuiView,
+  MuiCard,
+  MuiFlex,
+} from "ui";
 import Logo from "../Logo";
 
 const Header = () => {
@@ -11,6 +21,11 @@ const Header = () => {
             <View>
               <Logo width={10} height={6} />
               <Button>Hey</Button>
+              <MuiFlex display="flex">
+                <MuiCard backgroundColor="red">
+                  <MuiView>Some data</MuiView>
+                </MuiCard>
+              </MuiFlex>
             </View>
           </Flex>
         </Space>
